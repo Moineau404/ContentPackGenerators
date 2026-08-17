@@ -1,5 +1,5 @@
 # moineau404.github.io/ContentPackGenerators
-> Data Pack Generators for Minecraft Java Edition
+> Content Pack Generators for mod Content Packs (Minecraft Java Edition)
 
 https://moineau404.github.io/ContentPackGenerators/
 
