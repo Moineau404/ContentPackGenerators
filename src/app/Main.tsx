@@ -9,23 +9,7 @@ import { SpyglassProvider } from './contexts/Spyglass.jsx'
 
 function Main() {
 	return (
-		<StoreProvider>
-			<LocaleProvider>
-				<ThemeProvider>
-					<VersionProvider>
-						<TitleProvider>
-							<SpyglassProvider>
-								<ProjectProvider>
-									<ModalProvider>
-										<App />
-									</ModalProvider>
-								</ProjectProvider>
-							</SpyglassProvider>
-						</TitleProvider>
-					</VersionProvider>
-				</ThemeProvider>
-			</LocaleProvider>
-		</StoreProvider>
+		<App />
 	)
 }
 
