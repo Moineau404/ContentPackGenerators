@@ -149,13 +149,6 @@ function WhatsNew() {
 	</ToolGroup>
 }
 
-function Contributors() {
-	return <div class="contributors">
-		<h3>Supporters</h3>
-		<ContributorsList list={supporters} large />
-	</div>
-}
-
 interface ContributorsListProps {
 	list: typeof supporters
 	large?: boolean
