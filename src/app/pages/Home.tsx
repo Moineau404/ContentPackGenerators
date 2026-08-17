@@ -148,17 +148,3 @@ function WhatsNew() {
 		{items?.slice(0, 3).map(item => <Card link="/whats-new/" overlay={<WhatsNewTime item={item} short={true} />}>{item.title}</Card>)}
 	</ToolGroup>
 }
-
-interface ContributorsListProps {
-	list: typeof supporters
-	large?: boolean
-}
-function ContributorsList({ list, large }: ContributorsListProps) {
-	return <div class={`contributors-list ${large ? 'contributors-large' : ''}`}>
-		{list.map((c) =>
-			<a class="tooltipped tip-se" href={c.url} target="_blank" aria-label={c.name}>
-				<img width={large ? 48 : 32} height={large ? 48 : 32} src={c.avatar} alt={c.name} loading="lazy" />
-			</a>
-		)}
-	</div>
-}
