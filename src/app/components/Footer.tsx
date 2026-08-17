@@ -5,7 +5,7 @@ import { Octicon } from './index.js'
 interface Props {
 	donate?: boolean,
 }
-export function Footer({ donate }: Props) {
+export function Footer({}: Props) {
 	const { locale } = useLocale()
 
 	return <footer>
