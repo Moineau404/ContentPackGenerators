@@ -10,12 +10,11 @@ export function Footer({ donate }: Props) {
 
 	return <footer>
 		<p>
-			<span>{locale('developed_by')} <a href="https://github.com/misode" target="_blank" rel="noreferrer">Misode</a></span>
+			<span>{locale('forked_by')} <a href="https://github.com/Moineau404" target="_blank" rel="noreferrer">Moineau</a></span>
 		</p>
-		{donate !== false && <p class="donate">
-			{Octicon.heart}
-			<a href="https://ko-fi.com/misode" target="_blank" rel="noreferrer">{locale('donate')}</a>
-		</p>}
+		<p>
+			<span>{locale('based_on')} <a href="https://github.com/misode/misode.github.io" target="_blank" rel="noreferrer">Misode's Data Pack Generators for Minecraft Java Edition</a></span>
+		</p>
 		<p>
 			{Octicon.mark_github}
 			<span>{locale('source_code_on')} <a href={SOURCE_REPO_URL} target="_blank" rel="noreferrer">{locale('github')}</a></span>
